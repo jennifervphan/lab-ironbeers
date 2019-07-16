@@ -5,4 +5,149 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    margin: 0;
+    height: 50px;
+    background-color: #2081C3;
+}
+
+.nav ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background: #0A2C42;
+    margin: 0;
+    padding: 20px 0 0 20px;
+}
+
+.foot h4 {
+    margin: 0;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.index-container img,
+button {
+    margin-bottom: 15px;
+}
+
+.index-container img {
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.index-container button {
+    background-color: #2081C3;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.flex-container {
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+.flex-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    padding: 10px;
+}
+
+.flex-container div img {
+    width: 15%;
+    margin: 0 auto;
+}
+
+.flex-container div h3,
+h6,
+p {
+    margin: 0;
+}
+
+.flex-container div p {
+    font-size: 10px;
+}
+
+.flex-container div img,
+p {
+    height: 45%;
+}
+
+.tag {
+    color: grey;
+}
+
+.random-beer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 100px 150px 100px;
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer img {
+    width: 20%;
+    margin: 0 auto;
+    float: right;
+}
+
+.random-beer p {
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.description {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 150px 0 auto;
+}
