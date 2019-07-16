@@ -12,7 +12,9 @@ font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-    height: 100vh;
+    /* position: relative; */
+    /* min-height: 100vh; */
+    min-height: calc(100vh - 50px);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,16 +46,14 @@ body {
 }
 
 .foot {
-    position: absolute;
-    height: 40px;
+    /* position: absolute;
+    bottom: 0; */
+    height: 30px;
     width: 100%;
     background: #0A2C42;
     margin: 0;
     padding: 20px 0 0 20px;
-}
-
-.foot h4 {
-    margin: 0;
+    color: white;
 }
 
 .index-container {
@@ -71,7 +71,7 @@ button {
 
 .index-container img {
     width: 300px;
-    padding-bottom: 20px;
+    padding: 30px 0 20px;
 }
 
 .index-container button {
@@ -101,8 +101,7 @@ button {
 }
 
 .flex-container div img {
-    width: 15%;
-    margin: 0 auto;
+    width: 12%;
 }
 
 .flex-container div h3,
@@ -120,22 +119,35 @@ p {
     height: 45%;
 }
 
+.flex-container div a {
+    text-decoration: none;
+    color: black;
+}
+
 .tag {
     color: grey;
+    padding-top: 10px;
 }
 
 .random-beer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 100px 100px 150px 100px;
+    padding: 40px 100px 150px 100px;
     background-color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer div {
+    padding: 10px;
+}
+
+.random-beer ul {
+    padding: 0 20px;
 }
 
 .random-beer img {
     width: 20%;
-    margin: 0 auto;
-    float: right;
+    margin-left: auto;
 }
 
 .random-beer p {
